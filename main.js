@@ -39,29 +39,3 @@ document.getElementById('issue-form').addEventListener('submit', async (e) => {
     }
 });
 
-
-// // js/main.js
-// import { database } from '../src/firebase-config.js';
-// import { ref, push } from "firebase/database";
-
-// document.getElementById('issue-form').addEventListener('submit', (e) => {
-//     e.preventDefault();
-    
-//     const username = document.getElementById('username').value;
-//     const description = document.getElementById('description').value;
-//     const location = document.getElementById('location').value;
-//     const photo = document.getElementById('photo').files[0];
-
-//     // Add issue to Firebase Realtime Database
-//     const issuesRef = ref(database, 'issues');
-//     push(issuesRef, {
-//         username: username,
-//         description: description,
-//         location: location,
-//         photo: photo.name // Store only the file name or URL
-//     }).then(() => {
-//         alert('Issue submitted successfully!');
-//     }).catch((error) => {
-//         console.error('Error submitting issue:', error);
-//     });
-// });
